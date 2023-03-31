@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+    <title>Cadastro de Livros</title>
+</head>
+<body>
+    <form class="form-horizontal">
+        <fieldset>
+        <div class="panel panel-primary">
+            <div class="panel-heading"><a href="index.html"  style="color: aliceblue;">Voltar para a página principal</a></div>
+            
+            <div class="panel-body">
+        <div class="form-group">
+        <!--
+        <div class="form-group">   
+        <div class="col-md-4 control-label">
+            <img id="logo" src="http://blogdoporao.com.br/wp-content/uploads/2016/12/Faculdade-pitagoras.png"/>
+        </div>
+        <div class="col-md-4 control-label">
+            <h1>Cadastro de Cliente</h1>
+            
+        </div>
+        </div>
+            -->
+        <div class="col-md-11 control-label">
+                <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+        </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="Nome">Titulo do livro <h11>*</h11></label>  
+          <div class="col-md-8">
+          <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+          <label class="col-md-2 control-label" for="Nome">Autor <h11>*</h11></label>  
+          <div class="col-md-8">
+          <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="Nome">ISBN <h11>*</h11></label>  
+          <div class="col-md-2">
+          <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+          </div>
+          
+          <label class="col-md-1 control-label" for="Nome">Descrição<h11>*</h11></label>  
+          <div class="col-md-2">
+          <input id="dtnasc" name="dtnasc" placeholder="" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+        </div>
+        
+        <label class="col-md-2 control-label" for="Nome"> <h11>Detalhes da publicação*</h11></label>  
+          <div class="col-md-8">
+          <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+
+          <label class="col-md-2 control-label" for="Nome">Assuntos <h11>*</h11></label>  
+          <div class="col-md-8">
+          <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+
+          <label class="col-md-2 control-label" for="Nome">Gênero <h11>*</h11></label>  
+          <div class="col-md-8">
+          <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+
+          <label class="col-md-2 control-label" for="Nome">Resumo <h11>*</h11></label>  
+          <div class="col-md-8">
+          <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+
+          <label class="col-md-2 control-label" for="Nome">Número de exemplares disponiveis <h11>*</h11></label>  
+          <div class="col-md-8">
+          <input id="Nome" name="Nome" placeholder="Apenas números" class="form-control input-md" required="" type="text">
+          </div>
+        
+        
+        <!-- Button (Double) -->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="Cadastrar"></label>
+          <div class="col-md-8">
+            <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+            <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+          </div>
+        </div>
+
+        
+        
+        </div>
+        </div>
+        
+        
+        </fieldset>
+        </form>
+</body>
+</html>
